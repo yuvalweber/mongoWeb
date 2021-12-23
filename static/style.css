@@ -1,0 +1,45 @@
+body {
+	background-color: #5ec2c0;
+}
+
+#clock {
+	font-weight:bolder;
+	font-size: 30px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.square {
+	height: 300px;
+	width: 300px;
+	background-color: #419797;
+	border-style: solid;
+	border-color: #8cee31;
+	border-radius: 5%;
+	position: relative;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.object {
+
+	color:yellow;
+	text-align: left;
+	font-weight: bolder;
+	font-size: 25px;
+  	padding-left: 10px;
+}
+
+.dot {
+	height: 20px;
+    width: 20px;
+    background-color: #8cee31;
+    border-style: solid;
+    border-color: #bbb;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+}

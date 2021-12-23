@@ -1,0 +1,21 @@
+<html>
+<meta charset="utf-8"/>
+<head>
+ <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body onload="startTime()">
+ <div id="clock"></div>
+ {% for server in info %}
+ 	<div class="square">
+ 	<div class="dot"></div>
+	<p class="object server"> server: {{ server }} </p>
+	<p class="object status"> status: {{ info[server]['state'] }} </p>
+	<p class="object health"> health: {{ info[server]['health'] }} </p>
+	<p class="object votes"> votes: {{ info[server]['votes'] }} </p>
+	<p class="object priority"> priority: {{ info[server]['priority'] }} </p>
+ 	</div>
+{% endfor %}
+<script src="static/index.js"></script>
+</body>
+</html>
